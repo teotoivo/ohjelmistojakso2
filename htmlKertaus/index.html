@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" class="w-full h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <!--
+      import jquery
+    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="tail.css" />
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="w-full h-full text-white">
+    <div class="flex justify-center items-center w-full h-full p-10">
+      <div class="grid gap-4 grid-rows-grid grid-cols-grid">
+        <div
+          class="row-span-2 flex flex-col bg-neutralDarkBlue rounded-lg max-h-full"
+        >
+          <div class="bg-primaryBlue text-2xl rounded-lg p-4">
+            <p><span class="text-sm">Report for</span><br />Jeremy Robson</p>
+          </div>
+          <div class="p-4 flex flex-col items-start gap-2">
+            <button class="daily-btn opacity-40 hover:opacity-100">
+              Daily
+            </button>
+            <button class="weekly-btn opacity-40 hover:opacity-100">
+              Weekly
+            </button>
+            <button class="monthly-btn opacity-40 hover:opacity-100">
+              Monthly
+            </button>
+          </div>
+        </div>
+        <div class="bg-primarySoftOrange rounded-lg max-h-full">
+          <div class="relative w-full">
+            <img
+              src="./images/icon-work.svg"
+              alt="yes"
+              class="absolute right-0 opacity-80 w-16 z-1"
+            />
+          </div>
+          <div
+            class="p-4 bg-neutralDarkBlue rounded-lg mt-10 relative z-20 hover:bg-neutralDesaturatedBlue"
+          >
+            <p class="flex">
+              Work
+              <button
+                class="flex items-center justify-center gap-1 ml-auto opacity-40 hover:opacity-100"
+              >
+                <div class="rounded-full border-2 bg-white"></div>
+                <div class="rounded-full border-2 bg-white"></div>
+                <div class="rounded-full border-2 bg-white"></div>
+              </button>
+            </p>
+            <div class="daily">
+              <p class="text-4xl">5hrs</p>
+              <!-- daily -->
+              <p class="opacity-40 text-sm">Previous - 7hrs</p>
+              <!-- daily -->
+            </div>
+            <div class="weekly hidden">
+              <p class="text-4xl">32hrs</p>
+              <!-- weekly -->
+              <p class="opacity-40 text-sm">Previous - 36hrs</p>
+              <!-- weekly -->
+            </div>
+            <div class="monthly hidden">
+              <p class="text-4xl">103hrs</p>
+              <!-- monthly -->
+              <p class="opacity-40 text-sm">Previous - 128hrs</p>
+              <!-- monthly -->
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-primarySoftBlue rounded-lg max-h-full">
+          <div class="relative w-full">
+            <img
+              src="./images/icon-play.svg"
+              alt="yes"
+              class="absolute right-0 opacity-80 w-16 z-1"
+            />
+          </div>
+          <div
+            class="p-4 bg-neutralDarkBlue rounded-lg mt-10 relative z-20 hover:bg-neutralDesaturatedBlue"
+          >
+            <p class="flex">
+              Play
+              <button
+                class="flex items-center justify-center gap-1 ml-auto opacity-40 hover:opacity-100"
+              >
+                <div class="rounded-full border-2 bg-white"></div>
+                <div class="rounded-full border-2 bg-white"></div>
+                <div class="rounded-full border-2 bg-white"></div>
+              </button>
+            </p>
+            <div class="daily">
+              <p class="text-4xl">1hrs</p>
+              <!-- daily -->
+              <p class="opacity-40 text-sm">Previous - 2hrs</p>
+              <!-- daily -->
+            </div>
+            <div class="weekly hidden">
+              <p class="text-4xl">10hrs</p>
+              <!-- weekly -->
+              <p class="opacity-40 text-sm">Previous - 8hrs</p>
+              <!-- weekly -->
+            </div>
+            <div class="monthly hidden">
+              <p class="text-4xl">23hrs</p>
+              <!-- monthly -->
+              <p class="opacity-40 text-sm">Previous - 29hrs</p>
+              <!-- monthly -->
+            </div>
+          </div>
+        </div>
+
+        <div>
+          Study 0hrs
+          <!-- daily -->
+          Previous - 1hr
+          <!-- daily -->
+          4hrs
+          <!-- weekly -->
+          Previous - 7hrs
+          <!-- weekly -->
+          13hrs
+          <!-- monthly -->
+          Previous - 19hrs
+          <!-- monthly -->
+        </div>
+
+        <div>
+          Exercise 1hr
+          <!-- daily -->
+          Previous - 1hr
+          <!-- daily -->
+          4hrs
+          <!-- weekly -->
+          Previous - 5hrs
+          <!-- weekly -->
+          11hrs
+          <!-- monthly -->
+          Previous - 18hrs
+          <!-- monthly -->
+        </div>
+
+        <div>
+          Social 1hr
+          <!-- daily -->
+          Previous - 3hrs
+          <!-- daily -->
+          5hrs
+          <!-- weekly -->
+          Previous - 10hrs
+          <!-- weekly -->
+          21hrs
+          <!-- monthly -->
+          Previous - 23hrs
+          <!-- monthly -->
+        </div>
+
+        <div>
+          Self Care 0hrs
+          <!-- daily -->
+          Previous - 1hr
+          <!-- daily -->
+          2hrs
+          <!-- weekly -->
+          Previous - 2hrs
+          <!-- weekly -->
+          7hrs
+          <!-- monthly -->
+          Previous - 11hrs
+          <!-- monthly -->
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Laura Järvinen</a>.
+    </div>
+  </body>
+</html>
